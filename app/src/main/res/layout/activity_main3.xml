@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".foodadmin.MainActivity2">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/id"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:layout_marginVertical="10dp"
+               android:text="id"
+               android:gravity="center"/>
+           <EditText
+               android:id="@+id/category"
+               android:layout_marginVertical="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:hint="category"/>
+           <EditText
+               android:id="@+id/description"
+               android:layout_marginVertical="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="description"/>
+           <Button
+               android:id="@+id/clicktopickimage"
+               android:layout_marginVertical="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="click to pick image"/>
+           <EditText
+               android:id="@+id/price"
+               android:layout_width="match_parent"
+               android:layout_marginVertical="10dp"
+               android:layout_height="wrap_content"
+               android:inputType="numberDecimal"
+               android:hint="price"/>
+           <EditText
+               android:id="@+id/star"
+               android:inputType="numberDecimal"
+               android:layout_width="match_parent"
+               android:layout_marginVertical="10dp"
+               android:maxEms="5"
+               android:layout_height="wrap_content"
+               android:hint="number of star"/>
+           <EditText
+               android:id="@+id/timevalue"
+               android:inputType="numberDecimal"
+               android:layout_width="match_parent"
+               android:layout_marginVertical="10dp"
+               android:layout_height="wrap_content"
+               android:hint="time value"/>
+           <EditText
+               android:id="@+id/title"
+               android:layout_marginVertical="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="title"/>
+
+
+           <Button
+               android:id="@+id/add"
+               android:layout_marginVertical="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="add food"/>
+
+           <Button
+               android:id="@+id/update"
+               android:layout_marginVertical="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="update food"/>
+           <Button
+               android:id="@+id/delete"
+               android:layout_marginVertical="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="delete food"/>
+       </LinearLayout>
+   </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
